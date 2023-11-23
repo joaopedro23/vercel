@@ -21,7 +21,7 @@ form {
   
   
   /* Estilos para os campos de entrada */
-input[type="text"]{
+input[type="text"] {
   border-radius: 5px;
   box-sizing: border-box;
   padding: 3px;
@@ -74,4 +74,11 @@ button[type="button"] {
 }
 .text-time{
     grid-column: 1 / span 2;
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"] {
+      /* Ajuste de estilos para dispositivos menores, se necessário */
+      /* Por exemplo, redução do padding ou alteração na largura */
+  }
 }
