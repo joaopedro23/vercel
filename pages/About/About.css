@@ -1,0 +1,101 @@
+/* Reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos da página quem somos */
+.quem-somos {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #e40f0f;
+    width: 100%;
+    height: 187px;
+    flex-shrink: 0;
+}
+
+.texto-quem-somos {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px;
+   
+}
+.text-contanie {
+    color: #EEE;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+}
+
+p {
+    color: #666;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.text-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 408px;
+    height: 1429px;
+    flex-shrink: 0;
+    text-align: left;
+  }
+
+.centroPokemon{
+    padding-bottom: 30px;
+    margin-right: 182px;
+}
+
+.lorem-text {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 300%;
+    text-align: justify;
+  
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
+}
+.curaPokemon{
+    padding-bottom: 30px;
+    margin-right: 113px;
+}
+
+.frase-estilizada {
+    
+    font-weight: bold;
+    color: red; 
+}
+.tradicao{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-right: 120px;
+}
+.Pokemon{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-right: 150px;
+}
+.Alta{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-right: 235px;
+}

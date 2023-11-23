@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/salvar-dados
+
+{
+    "nome": "SeuNome",
+    "sobrenome": "SeuSobrenome",
+    "regiao": "SuaRegiao",
+    "cidade": "SuaCidade",
+    "pokemons": ["pokemon1", "pokemon2", "pokemon3"],
+    "dataAtendimento": "2023-11-25",
+    "horaAtendimento": "10:00:00"
+}

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto-Agendado{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #e40f0f;
+    width: 100%;
+    height: 187px;
+    flex-shrink: 0;
+}
+.texto-01{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20px;
+}
+.text-02{
+    color: #EEE;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+}
+.super-contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px; 
+    width: 408px;
+    height: 255px;
+    border: 1px solid #DF8686;
+    background: rgba(223, 134, 134, 0.04);
+    box-sizing: border-box
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+.info {
+    color: #747474;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.button-type {
+    border-radius: 30px;
+    background: #E40F0F;
+    color: #e0e0e0;
+    width: 183px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+
+

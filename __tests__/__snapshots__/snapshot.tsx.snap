@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="background-image"
+  >
+    <nav>
+      <ul>
+        <li />
+        <li
+          class="Quem-somos"
+        >
+          <a
+            href="/About"
+            style="text-decoration: none; color: rgb(0, 0, 0);"
+          >
+            Quem Somos
+          </a>
+        </li>
+        <li
+          class="Agendar-consulta"
+        >
+          <a
+            href="/Agendar"
+            style="text-decoration: none; color: rgb(255, 255, 255);"
+          >
+            Agendar Consulta
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="text-over-image"
+    >
+      <h1>
+        sou home
+      </h1>
+    </div>
+  </div>
+</div>
+`;

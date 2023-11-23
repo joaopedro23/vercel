@@ -1,27 +1,32 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import { NextApiRequest, NextApiResponse } from 'next';
 
-type DateResponse = Array<string>
+type DateResponse = Array<string>;
 
-function getDates(d1: number, d2: number): Array<Date> {
-    var oneDay = 24 * 3600 * 1000;
-    for (var d = [], ms = d1 * 1, last = d2 * 1; ms < last; ms += oneDay) {
-        d.push(new Date(ms));
-    }
-    return d;
+function formatDate(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // Adiciona zero à esquerda se for menor que 10
+  const day = String(date.getDate()).padStart(2, '0'); // Adiciona zero à esquerda se for menor que 10
+  return `${year}-${month}-${day}`;
+}
+
+function getDates(startDate: Date, endDate: Date): Array<string> {
+  const dates = [];
+  let currentDate = startDate;
+  while (currentDate <= endDate) {
+    dates.push(formatDate(currentDate));
+    currentDate = new Date(currentDate.getTime() + 24 * 60 * 60 * 1000); // Incrementa um dia
+  }
+  return dates;
 }
 
 export default function handler(
-    req: NextApiRequest,
-    res: NextApiResponse<DateResponse>
+  req: NextApiRequest,
+  res: NextApiResponse<DateResponse>
 ) {
-    const today = new Date();
-    const nextWeek = today.getTime() * 1 + 7 * 24 * 3600 * 1000;
-    let dates = getDates(today.getTime(), nextWeek)
+  const today = new Date();
+  const nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000); // Uma semana à frente
 
-    let dateStringArray: Array<string> = []
-    dates.forEach(date => {
-        dateStringArray.push(date.toLocaleDateString())
-    })
-
-    res.status(200).json(dateStringArray)
+  const dates = getDates(today, nextWeek);
+  
+  res.status(200).json(dates);
 }

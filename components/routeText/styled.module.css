@@ -1,0 +1,43 @@
+.breadcrumb {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .breadcrumb-link {
+    text-decoration: none;
+    color: #0070f3;
+    transition: color 0.3s ease;
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #4c96ff;
+    
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 4px;
+    color:#eee;
+    font-size: 12px;
+  }
+  
+  .breadcrumb-current {
+    color: #eee;
+    font-weight: bold;
+  }
+  .breadcrumb-about {
+    color: #eee !important; 
+  }
+
+  /* Adicionando classe para links específicos */
+  .breadcrumb-home,
+  .breadcrumb-about {
+    color: #eee;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }

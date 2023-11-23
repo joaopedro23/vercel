@@ -1,0 +1,70 @@
+/* styles.css */
+
+/* Estilo para o formulário */
+form {
+    display: grid;
+    grid-template-columns: 210px 210px;
+    grid-template-rows: 40px 40px;
+    justify-content: center;
+    gap: 25px;
+    background-color: transparent;
+    width: 80%;
+    margin: 0 auto;
+}
+  
+  
+  /* Estilos para os campos de entrada */
+input[type="text"]{
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+input[type="date"],
+input[type="time"],
+
+select {
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+    width: calc(50% - 10px); /* 50% do container com um espaçamento entre os campos */
+    
+}
+
+  /* Estilos para os botões */
+button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    border-radius: 30px;
+    background: #E40F0F;
+    color: #e0e0e0;
+    width: 183px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+  /* Estilo para os valores acima do botão de envio */
+div > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+  /* Seletor para o botão "Adicionar Pokémon" */
+button[type="button"] {
+    border-radius: 30px;
+    border: 1px solid #1D1D1D;
+    width: 183px;
+    height: 42px;
+    flex-shrink: 0;
+    grid-column: 2;
+    grid-row: 3; 
+}
+.text-time{
+    grid-column: 1 / span 2;
+}

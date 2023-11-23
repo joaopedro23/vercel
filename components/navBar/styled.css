@@ -1,0 +1,78 @@
+/* Estilos para o elemento Nav */
+nav {
+  background-color: #fff;
+  color: #000; /* Alterado para preto para garantir legibilidade */
+  padding: 10px 20px;
+  text-decoration: none;
+  display: flex; /* Adiciona flex container */
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos para o elemento Ul */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o elemento Li */
+nav ul li {
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+/* Estilos adicionais para a classe Agendar-consulta */
+nav ul li.Agendar-consulta {
+  background-color: #e40f0f;
+  border-radius: 30px;
+  padding: 10px 20px; /* Ajustado o padding para melhorar a aparência */
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif; /* Adicionada aspas ao nome da fonte */
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Estilos adicionais para a classe Quem-somos */
+nav ul li.Quem-somos {
+  color: #000;
+  font-family: 'Inter', sans-serif; /* Adicionada aspas ao nome da fonte */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Estilos para a classe Pokebola */
+.pokebola {
+  cursor: pointer;
+  border: 10px solid red;
+  border-radius: 50%;
+  transition: color 0.4s linear;
+  text-transform: uppercase;
+  transform: translate(-50%);
+  margin-left: 10px;
+}
+
+.pokebola:hover {
+  color: #fff;
+}
+
+.pokebola::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1; /* Ajustado para -1 para aparecer abaixo do conteúdo */
+  transition: transform 0.5s;
+  transform-origin: center; /* Corrigido o valor para o centro */
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  border-radius: 50%; /* Adicionado para criar um círculo */
+}
