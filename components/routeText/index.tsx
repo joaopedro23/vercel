@@ -3,6 +3,7 @@
  
 import { useRouter } from 'next/router';
 import styles from './styled.module.css'
+import Link from "next/link"; 
 
 const Breadcrumb: React.FC = () => {
   const router = useRouter();
@@ -15,9 +16,9 @@ const Breadcrumb: React.FC = () => {
   return (
     <div className='breadcrumb'>
     <span>
-      <a href="/" className={`${styles['breadcrumb-link']} ${styles['breadcrumb-home']}`}>
+      <Link href="/" className={`${styles['breadcrumb-link']} ${styles['breadcrumb-home']}`}>
         Home
-      </a>
+      </Link>
     </span>
     {pathParts.map((part, index) => (
       <span key={part} className={styles['breadcrumb-separator']} >
@@ -25,11 +26,11 @@ const Breadcrumb: React.FC = () => {
         {index === pathParts.length - 1 ? (
           <span className={styles['breadcrumb-current']}>{part.toLowerCase()}</span>
         ) : (
-          <a href={`/${part}`}
+          <Link href={`/${part}`}
           className={`${styles['breadcrumb-link']} ${styles['breadcrumb-about']}`}
            >
             {part.toLowerCase()}
-          </a>
+          </Link>
         )}
       </span>
     ))}

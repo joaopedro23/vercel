@@ -4,6 +4,7 @@ import styles from './styles.module.css'
 import NavBar from '../../components/navBar';
 import Breadcrumb from '../../components/routeText';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 interface AgendamentoData {
   nome: string;
@@ -67,7 +68,7 @@ function ConsultaAgendada() {
 
       <div className={styles.container}>
       <div className={styles.icon}>
-                        <img src="check.svg" alt="Verificado"/>
+                        <Image src="check.svg" alt="Verificado"/>
                     </div>
             <div className={styles['styles.info']}>
               <p>Nome: {agendamentoData.nome}</p>

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import "./styled.css"
-
+import Image from 'next/image'
 
 
 export default function NavBar() {
   return (
     
     <nav>
-    <img src="white-pokeball.svg" alt="pokebola" className="pokebola" />
+    <Image src="white-pokeball.svg" alt="pokebola" className="pokebola" />
       <ul>
         <li className='pokebola-li'>
         </li>
